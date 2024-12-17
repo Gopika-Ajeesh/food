@@ -1,23 +1,103 @@
-<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical"
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-        <ImageView
-            android:layout_margin="15dp"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/bg"/>
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <ImageView
+                android:layout_margin="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Delivery"
+                android:textColor="#FF5722"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search for dishes or restaurants"
+            android:layout_margin="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Food Delivery"
-            android:textColor="#A22903"
-            android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            android:textSize="25dp"
+            android:layout_margin="20dp"
+            android:text="Featured Dishes"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/pizza" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza"
+                    android:textColor="#ffffff"
+                    android:background="#FF5722"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/burger" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Burger"
+                    android:textColor="#ffffff"
+                    android:background="#FF5722"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/salad" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Salad"
+                    android:textColor="#ffffff"
+                    android:background="#FF5722"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Dishes"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/burger"/>
+        <ImageView
+            android:layout_marginLeft="90dp"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:background="@drawable/pizza"/>
+        <ImageView
+            android:layout_marginLeft="90dp"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:background="@drawable/salad"/>
     </LinearLayout>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Search for dishes or restaurants"
-        android:layout_margin="10dp"/>
-</LinearLayout>
+</ScrollView>
